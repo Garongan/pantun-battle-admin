@@ -1,0 +1,145 @@
+
+/* Sidebar */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 267px;
+    transition: all .3s ease-in-out;
+    z-index: 9999;
+    display: none;
+}
+
+
+.side-top {
+    background-color: #141414f8;
+    top: 0;
+
+}
+
+/* Close */
+.close img{
+    cursor: pointer;
+    height: 20px;
+}
+
+/* End Close */
+/* Logo */
+.logo-box{
+    height: 60px;
+    width: 100%;
+    align-items: center;
+    transition: all .5s ease;
+}
+.logo-brand img{
+    height: 50px;
+}
+/* End Logo */
+
+/* Menu */
+
+.sidebar-list{
+    height: 87%;
+    padding: 10px 0 15px 0;
+    overflow: auto;
+
+}
+.sidebar-group {
+    height: 100%;
+    background-color: #141414e3;
+}
+
+.sidebar-list::-webkit-scrollbar {
+    display: none;
+}
+
+.sidebar-list li {
+    margin-bottom: 10px;
+    list-style: none;
+    transition: all .5s ease;
+
+}
+.sidebar-list li:hover {
+    background-color: #141414f8;
+}
+
+.sidebar-list li .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all .5s ease;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.sidebar-list li.active .title {
+    background-color: #141414;
+}
+
+.sidebar-list li .title img{
+    margin-right: 15px;
+    margin-left: 25px;
+}
+
+.sidebar-list li .title .name {
+    font-size: 17px;
+    font-weight: 400;
+    color: rgb(235, 235, 235);
+}
+
+a.link {
+    text-decoration: none;
+}
+
+.tombolview {
+    background-color: #FD0499;
+    width: 100px;
+    height: 35px;
+    color: white;
+    border-color: unset;
+    border-radius: 7px;
+}
+
+hr.solid {
+    border-top: 2px solid rgb(65, 63, 63);
+}
+
+/* End Menu */
+
+/* End Sidebar */
+
+/* custom base color */
+.base-color {
+    background-color: #04ADC0 !important;
+}
+/* end custom base color */
+
+/* logo */
+.logo-style {
+    max-width: 300px;
+}
+/* end logo */
+@media screen and (max-width:768px)
+{
+    .order-md-last {
+        order: 6 !important;
+    }
+      .navbar-expand-md .navbar-nav {
+        flex-direction: row;
+      }
+      .navbar-expand-md .navbar-nav .dropdown-menu {
+        position: absolute;
+      }
+      .navbar-expand-md .navbar-nav .nav-link {
+        padding-right: 0.75rem;
+        padding-left: 0.75rem;
+      }
+      .navbar-expand-md .navbar-nav-scroll {
+        overflow: visible;
+      }
+      .navbar-expand-md .navbar-collapse {
+        display: flex !important;
+        flex-basis: auto;
+      }
+}

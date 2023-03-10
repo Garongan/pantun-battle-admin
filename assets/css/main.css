@@ -6472,6 +6472,10 @@ textarea.form-control-lg {
   width: 25% !important;
 }
 
+.w-35 {
+  width: 35% !important;
+}
+
 .w-50 {
   width: 50% !important;
 }
@@ -6626,6 +6630,10 @@ textarea.form-control-lg {
 
 .gap-5 {
   gap: 4rem !important;
+}
+
+.row-gap-3 {
+  row-gap: 1rem !important;
 }
 
 .justify-content-start {
@@ -7168,6 +7176,9 @@ textarea.form-control-lg {
 
 .fs-6 {
   font-size: 0.625rem !important;
+}
+.fs-7 {
+  font-size: 0.425rem !important;
 }
 
 .fst-italic {

@@ -120,6 +120,14 @@ hr.solid {
     max-width: 300px;
 }
 /* end logo */
+
+/* participant container */
+
+@media screen and (max-width: 575px){
+
+}
+
+/* end participant container */
 @media screen and (max-width:768px)
 {
     .order-md-last {

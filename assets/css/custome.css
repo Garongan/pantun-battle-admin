@@ -127,9 +127,26 @@ hr.solid {
     .participant-container .container-fluid{
         width: fit-content !important;
     }
+    .traffic-container {
+        max-height: 30rem !important;
+    }
 }
 
 /* end participant container */
+
+/* custom class table head */
+
+.custom-table th{
+    text-transform: capitalize !important;
+}
+
+.custom-table thead th {
+    background-color: rgb(18, 185, 191) !important;
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+}
+
+/* end custom class table head */
 @media screen and (max-width:768px)
 {
     .order-md-last {

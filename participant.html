@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DASHBOARD</title>
+    <title>PARTICIPANT</title>
 
     <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="stylesheet" href="./assets/css/custome.css">
@@ -113,7 +113,7 @@
                             <div class="row w-100 row-cols-1 gap-3">
                                 
                                 <!-- participant header -->
-                                <div class="col-12">
+                                <div class="col-md-12">
                                     <div class="card shadow-sm">
                                         <div class="card-header">
                                             <div class="row w-100 row-cols-1 row-cols-lg-4">
@@ -142,214 +142,98 @@
                                 <!-- /participant header -->
 
                                 <!-- participant list -->
-                                <div class="col-12">
+                                <div class="col-md-12 mb-3">
                                     <div class="card">
-                                        <div class="card-header border-bottom-0">
-                                            <div class="row w-100 row-cols-2">
-                                                
-                                                <!-- title -->
-                                                <div class="col my-auto col-lg-8 col-sm-12">
-                                                    <div class="card-title fs-3 fw-bold">Data Participant | Source - All | Date - All </div>
-                                                </div>
-                                                <!-- /title -->
-
-                                                <!-- search -->
-                                                <div class="col-auto my-auto container-fluid">
-                                                    <input type="text" class="form-control form-control-lg form-control-sm fs-4" placeholder="Search Participant" aria-label="Search Username">
-                                                </div>
-                                                <!-- search -->
-
-                                                <!-- download button-->
-                                                <div class="col-auto my-auto text-center ms-auto">
-                                                    <button type="button" class="bg-success border-0 rounded">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="white" d="M19.35 10.04A7.49 7.49 0 0 0 12 4C9.11 4 6.6 5.64 5.35 8.04A5.994 5.994 0 0 0 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5c0-2.64-2.05-4.78-4.65-4.96zM19 18H6c-2.21 0-4-1.79-4-4c0-2.05 1.53-3.76 3.56-3.97l1.07-.11l.5-.95A5.469 5.469 0 0 1 12 6c2.62 0 4.88 1.86 5.39 4.43l.3 1.5l1.53.11A2.98 2.98 0 0 1 22 15c0 1.65-1.35 3-3 3zm-5.55-8h-2.9v3H8l4 4l4-4h-2.55z"/></svg>
-                                                    </button>
-                                                    <div class="fs-5">Download</div>
-                                                </div>
-                                                <!-- /download button -->
-
-                                            </div>
-                                        </div>
-                                        <div class="overflow-auto participant-container" style="max-height: 30rem">
-
-                                        <!-- List Header -->
-                                        <div class="row card-header mx-3 mb-3 rounded" style="background-color: rgb(18, 185, 191);">
-                                            <div class="col-auto">
-                                                <div class="bg-white text-black rounded p-2 w-100">
-                                                    No.
-                                                </div>
-                                            </div>
-                                            <div class="col container-fluid">
-                                                <div class="bg-white text-black rounded p-2 w-100">
-                                                    Date
-                                                </div>
-                                            </div>
-                                            <div class="col container-fluid">
-                                                <div class="bg-white text-black rounded p-2 w-100">
-                                                    Source
-                                                </div>
-                                            </div>
-                                            <div class="col container-fluid">
-                                                <div class="bg-white text-black rounded p-2 w-100">
-                                                    Name
-                                                </div>
-                                            </div>
-                                            <div class="col container-fluid">
-                                                <div class="bg-white text-black rounded p-2 w-100">
-                                                    Instagram
-                                                </div>
-                                            </div>
-                                            <div class="col-auto">
-                                                <div class="bg-white text-black rounded p-2 w-100">
-                                                    Action
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- List Header -->
-
-                                        <!-- List Data -->
                                         <div class="card-body">
-                                            <div class="row mx-3">
-                                                <div class="col-auto my-auto">
-                                                    <div class="text-black rounded p-2 w-100">
-                                                        1.
+                                            <div class="row">
+
+                                                <!-- participant title -->
+                                                <div class="col-md-9 mb-3 mt-3">
+                                                    <div class="card-title fs-3 fw-bold">Data Participant | Source - All | Date - All</div>
+                                                </div>
+                                                <!-- participant title -->
+
+                                                <!-- search and export -->
+                                                <div class="col-md-3 mb-3">
+                                                    <div class="row">
+                                                        <div class="col-md-9 col-9">
+                                                            <form action="">
+                                                                <input type="search" onkeyup="searchProduct()" class="form-control" id="keywords" placeholder="Search Username">
+                                                            </form>
+                                                        </div>
+                                                        <div class="col-md-3 col-3">
+                                                            <div class="d-flex">
+                                                            <a href="/" class="text-black text-center" title="Download">
+                                                                <button type="button" class="bg-success border-0 rounded btn-icon">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="white" d="M19.35 10.04A7.49 7.49 0 0 0 12 4C9.11 4 6.6 5.64 5.35 8.04A5.994 5.994 0 0 0 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5c0-2.64-2.05-4.78-4.65-4.96zM19 18H6c-2.21 0-4-1.79-4-4c0-2.05 1.53-3.76 3.56-3.97l1.07-.11l.5-.95A5.469 5.469 0 0 1 12 6c2.62 0 4.88 1.86 5.39 4.43l.3 1.5l1.53.11A2.98 2.98 0 0 1 22 15c0 1.65-1.35 3-3 3zm-5.55-8h-2.9v3H8l4 4l4-4h-2.55z"/></svg>
+                                                                </button>
+                                                                <div class="fs-5">Download</div>
+                                                            </a>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                                <div class="col container-fluid my-auto">
-                                                    <div class="text-black rounded p-2 w-100">
-                                                        10 Maret 2023
+                                                <!-- search and export -->
+
+                                                <!-- list participant -->
+                                                <div class="col-md-12">
+                                                    <div class="table-responsive">
+                                                        <table class="table table-borderless custom-table">
+                                                            <thead class="card-table">
+                                                            <tr>
+                                                                <th style="width: 5%" class="rounded-start">
+                                                                    <div class="form-control">No</div>
+                                                                </th>
+                                                                <th style="width: 15%">
+                                                                    <div class="form-control">Date</div>
+                                                                </th>
+                                                                <th style="width: 10%">
+                                                                    <div class="form-control">Source</div>
+                                                                </th>
+                                                                <th style="width: 30%">
+                                                                    <div class="form-control">Name</div>
+                                                                </th>
+                                                                <th style="width: 30%">
+                                                                    <div class="form-control">Instagram</div>
+                                                                </th>
+                                                                <th style="width: 10%" class="text-center rounded-end">
+                                                                    <div class="form-control">Action</div>
+                                                                </th>
+                                                            </tr>
+                                                            </thead>
+                                                        <tbody class="fs-3" id="products">
+                                                        <tr>
+                                                            <td class="text-center">
+                                                                <span class="form-control border border-0 fs-3">1.</span>
+                                                            </td>
+                                                            <td>
+                                                                <span class="form-control border border-0 fs-3">10 Maret 2023</span>
+                                                            </td>
+                                                            <td>
+                                                                <span class="form-control border border-0 fs-3">QR MRT</span>
+                                                            </td>
+                                                            <td>
+                                                                <span class="form-control border border-0 fs-3">Kevin Sanjaya</span>
+                                                            </td>
+                                                            <td>
+                                                                <span class="form-control border border-0 fs-3">kevinsjy123</span>
+                                                            </td>
+                                                            <td>
+                                                                <div style="width: 75%;">
+                                                                    <a href="action_view.html" class="btn bg-primary form-control mx-2">View</a>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        </tbody>
+                                                        </table>
+                                                        <div id="pagination"></div>
                                                     </div>
                                                 </div>
-                                                <div class="col container-fluid my-auto">
-                                                    <div class="text-black rounded p-2 w-100">
-                                                        QR Lift
-                                                    </div>
-                                                </div>
-                                                <div class="col container-fluid my-auto">
-                                                    <div class="text-black rounded p-2 w-100">
-                                                        Kevin Sanjaya
-                                                    </div>
-                                                </div>
-                                                <div class="col container-fluid my-auto">
-                                                    <div class="text-black rounded p-2 w-100">
-                                                        kevinsj123
-                                                    </div>
-                                                </div>
-                                                <div class="col-auto">
-                                                    <a href="action_view.html">
-                                                        <button type="button" class="text-black rounded p-2 w-100 btn bg-primary">
-                                                            View
-                                                        </button>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="row mx-3">
-                                                <div class="col-auto my-auto">
-                                                    <div class="text-black rounded p-2 w-100">
-                                                        2.
-                                                    </div>
-                                                </div>
-                                                <div class="col container-fluid my-auto">
-                                                    <div class="text-black rounded p-2 w-100">
-                                                        10 Maret 2023
-                                                    </div>
-                                                </div>
-                                                <div class="col container-fluid my-auto">
-                                                    <div class="text-black rounded p-2 w-100">
-                                                        Other
-                                                    </div>
-                                                </div>
-                                                <div class="col container-fluid my-auto">
-                                                    <div class="text-black rounded p-2 w-100">
-                                                        Ariel Tatum
-                                                    </div>
-                                                </div>
-                                                <div class="col container-fluid my-auto">
-                                                    <div class="text-black rounded p-2 w-100">
-                                                        arieltt1213
-                                                    </div>
-                                                </div>
-                                                <div class="col-auto">
-                                                    <a href="action_view.html">
-                                                        <button type="button" class="text-black rounded p-2 w-100 btn bg-primary">
-                                                            View
-                                                        </button>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="row mx-3">
-                                                <div class="col-auto my-auto">
-                                                    <div class="text-black rounded p-2 w-100">
-                                                        3.
-                                                    </div>
-                                                </div>
-                                                <div class="col container-fluid my-auto">
-                                                    <div class="text-black rounded p-2 w-100">
-                                                        11 Maret 2023
-                                                    </div>
-                                                </div>
-                                                <div class="col container-fluid my-auto">
-                                                    <div class="text-black rounded p-2 w-100">
-                                                        QR Lift
-                                                    </div>
-                                                </div>
-                                                <div class="col container-fluid my-auto">
-                                                    <div class="text-black rounded p-2 w-100">
-                                                        Fajar Sad Boy
-                                                    </div>
-                                                </div>
-                                                <div class="col container-fluid my-auto">
-                                                    <div class="text-black rounded p-2 w-100">
-                                                        lordsadboyfajar123
-                                                    </div>
-                                                </div>
-                                                <div class="col-auto">
-                                                    <a href="action_view.html">
-                                                        <button type="button" class="text-black rounded p-2 w-100 btn bg-primary">
-                                                            View
-                                                        </button>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="row mx-3">
-                                                <div class="col-auto my-auto">
-                                                    <div class="text-black rounded p-2 w-100">
-                                                        4.
-                                                    </div>
-                                                </div>
-                                                <div class="col container-fluid my-auto">
-                                                    <div class="text-black rounded p-2 w-100">
-                                                        10 Maret 2023
-                                                    </div>
-                                                </div>
-                                                <div class="col container-fluid my-auto">
-                                                    <div class="text-black rounded p-2 w-100">
-                                                        QR MRT
-                                                    </div>
-                                                </div>
-                                                <div class="col container-fluid my-auto">
-                                                    <div class="text-black rounded p-2 w-100">
-                                                        Dilan
-                                                    </div>
-                                                </div>
-                                                <div class="col container-fluid my-auto">
-                                                    <div class="text-black rounded p-2 w-100">
-                                                        dilan-jut123
-                                                    </div>
-                                                </div>
-                                                <div class="col-auto">
-                                                    <a href="action_view.html">
-                                                        <button type="button" class="text-black rounded p-2 w-100 btn bg-primary">
-                                                            View
-                                                        </button>
-                                                    </a>
-                                                </div>
+                                                <!-- list participant -->
+
                                             </div>
                                         </div>
-                                        <!-- /List Data -->
-                                        
-                                        </div>
-                                      </div>
+                                    </div>
                                 </div>
                                 <!-- /participant list -->
 

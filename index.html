@@ -20,7 +20,7 @@
                     <img src="./assets/icon/close.png" alt="">
                 </div>
                 <!-- Logo -->
-                <a href="" class="logo-box">
+                <a href="index.html" class="logo-box">
                     <div class="logo-brand d-flex justify-content-center">
                         <img src="./assets/logo/logo.png" alt="" class="">
                     </div>
@@ -32,10 +32,24 @@
             <div class="sidebar-group">
                 <ul class="sidebar-list ">
                     <li class="active">
-                        <a href="#" class="title">
+                        <a href="index.html" class="title">
                             <div class="mb-2 mt-2">
                                 <img src="./assets/icon/Dashboard_white.png" alt="" class="icon">
                                 <span class="name">Dashboard</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="traffic.html" class="title">
+                            <div class="mb-2 mt-2">
+                                <span class="name ms-5">Traffic</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="participant.html" class="title">
+                            <div class="mb-2 mt-2">
+                                <span class="name ms-5">Participant</span>
                             </div>
                         </a>
                     </li>
@@ -50,7 +64,7 @@
             <div class="container-fluid">
                 <div class="navbar-nav flex-row order-md-last">
                     <div class="nav-item dropdown">
-                    <a href="#" class="nav-link d-flex lh-1 text-reset p-0" data-bs-toggle="dropdown" aria-label="Open user menu">
+                    <a href="index.html" class="nav-link d-flex lh-1 text-reset p-0" data-bs-toggle="dropdown" aria-label="Open user menu">
                         <span class="avatar avatar-sm" style="background-image: url('./assets/photo/007m.jpg')"></span>
                         <div class="d-none d-xl-block ps-2">
                             <div style="color: var(--astr-yellow);">Admin Name</div>
@@ -79,7 +93,7 @@
                         </button>
                     </div>
                     <div class="nav-item  col-xl-auto">
-                        <a href="#">
+                        <a href="index.html">
                             <img src="./assets/logo/logo.png" alt="" height="40">
                         </a>
                     </div>
@@ -92,21 +106,27 @@
         <div class="page-wrapper">
             <div class="container-fluid">
                 <div class="page-body">
-                    <div class="row row-deck row-cols-lg-2">
+                    <div class="row row-deck row-cols-lg-2 w-100">
+
                         <!-- traffic -->
-                        <div class="col col-lg-6">
+                        <div class="col col-lg-5">
                             <div class="row row-cols-1 gap-3">
+
                                 <!-- logo -->
                                 <div class="col">
-                                    <img src="./assets/logo/logo.png" class="w-50 d-block mx-auto" alt="">
+                                    <a href="index.html">
+                                        <img src="./assets/logo/logo.png" class="w-50 d-block mx-auto" alt="">
+                                    </a>
                                 </div>
+                                <!-- /logo -->
+
                                 <!-- summary -->
                                 <div class="col">
                                     <div class="row row-cards">
                                         <!-- Total Visitor -->
                                         <div class="col-sm-6 col-lg-6">
                                             <div class="card card-sm">
-                                                <div class="card-body">
+                                                <div class="card-body border border-2 rounded-3 border-primary">
                                                     <div class="row align-items-center">
                                                       <div class="col-auto">
                                                         <span class="bg-primary text-white avatar rounded-circle"><!-- Download SVG icon from http://tabler-icons.io/i/currency-dollar -->
@@ -117,7 +137,7 @@
                                                         <div class="font-weight-medium fw-bold">
                                                           250
                                                         </div>
-                                                        <div class="text-muted">
+                                                        <div class="text-body">
                                                           Total Visitor
                                                         </div>
                                                       </div>
@@ -128,7 +148,7 @@
                                         <!-- Total Participant -->
                                         <div class="col-sm-6 col-lg-6">
                                             <div class="card">
-                                                <div class="card-body">
+                                                <div class="card-body border border-2 rounded-3 border-secondary">
                                                     <div class="row align-items-center">
                                                       <div class="col-auto">
                                                         <span class="bg-secondary text-white avatar rounded-circle"><!-- Download SVG icon from http://tabler-icons.io/i/currency-dollar -->
@@ -149,15 +169,20 @@
                                         </div>
                                     </div>
                                 </div>
+                                <!-- /summary -->
+
                                 <!-- List Traffic -->
                                 <div class="col">
-                                    <div class="card">
-                                        <div class="card-header">
+                                    <div class="">
+                                        <div class="card-header border-primary">
                                             <div class="row w-100 row-cols-1 row-cols-lg-2">
+
                                                 <!-- title -->
                                                 <div class="col my-auto">
-                                                    <div class="card-title text-primary fs-5">TRAFFIC - <span class="text-danger">All Date</span></div>
+                                                    <div class="card-title text-primary fs-3">TRAFFIC - <span class="text-danger">All Date</span></div>
                                                 </div>
+                                                <!-- title -->
+
                                                 <!-- filter -->
                                                 <div class="col col-auto col-sm-12">
                                                     <div class="row">
@@ -190,11 +215,14 @@
                                                         </div>
                                                     </div>
                                                 </div>
+                                                <!-- filter -->
+
                                             </div>
                                         </div>
-                                        <div class="list-group list-group-flush overflow-auto" style="max-height: 50rem">
+                                        <div class="overflow-auto" style="max-height: 50rem">
+                                        
                                         <!-- List Data -->
-                                          <div class="list-group-item">
+                                          <div class="list-group-item border-0 bg-transparent border-0 bg-transparent">
                                             <a href="#">
                                             <div class="row gap-3 text-center">
                                                 <!-- icon -->
@@ -230,7 +258,7 @@
                                             </div>
                                             </a>
                                           </div>
-                                          <div class="list-group-item">
+                                          <div class="list-group-item border-0 bg-transparent">
                                             <a href="#">
                                             <div class="row gap-3 text-center">
                                                 <!-- icon -->
@@ -266,7 +294,7 @@
                                             </div>
                                             </a>
                                           </div>
-                                          <div class="list-group-item">
+                                          <div class="list-group-item border-0 bg-transparent">
                                             <a href="#">
                                             <div class="row gap-3 text-center">
                                                 <!-- icon -->
@@ -302,7 +330,7 @@
                                             </div>
                                             </a>
                                           </div>
-                                          <div class="list-group-item">
+                                          <div class="list-group-item border-0 bg-transparent">
                                             <a href="#">
                                             <div class="row gap-3 text-center">
                                                 <!-- icon -->
@@ -338,7 +366,7 @@
                                             </div>
                                             </a>
                                           </div>
-                                          <div class="list-group-item">
+                                          <div class="list-group-item border-0 bg-transparent">
                                             <a href="#">
                                             <div class="row gap-3 text-center">
                                                 <!-- icon -->
@@ -374,7 +402,7 @@
                                             </div>
                                             </a>
                                           </div>
-                                          <div class="list-group-item">
+                                          <div class="list-group-item border-0 bg-transparent">
                                             <a href="#">
                                             <div class="row gap-3 text-center">
                                                 <!-- icon -->
@@ -410,7 +438,7 @@
                                             </div>
                                             </a>
                                           </div>
-                                          <div class="list-group-item">
+                                          <div class="list-group-item border-0 bg-transparent">
                                             <a href="#">
                                             <div class="row gap-3 text-center">
                                                 <!-- icon -->
@@ -446,7 +474,7 @@
                                             </div>
                                             </a>
                                           </div>
-                                          <div class="list-group-item">
+                                          <div class="list-group-item border-0 bg-transparent">
                                             <a href="#">
                                             <div class="row gap-3 text-center">
                                                 <!-- icon -->
@@ -482,7 +510,7 @@
                                             </div>
                                             </a>
                                           </div>
-                                          <div class="list-group-item">
+                                          <div class="list-group-item border-0 bg-transparent">
                                             <a href="#">
                                             <div class="row gap-3 text-center">
                                                 <!-- icon -->
@@ -518,7 +546,7 @@
                                             </div>
                                             </a>
                                           </div>
-                                          <div class="list-group-item">
+                                          <div class="list-group-item border-0 bg-transparent">
                                             <a href="#">
                                             <div class="row gap-3 text-center">
                                                 <!-- icon -->
@@ -554,7 +582,7 @@
                                             </div>
                                             </a>
                                           </div>
-                                          <div class="list-group-item">
+                                          <div class="list-group-item border-0 bg-transparent">
                                             <a href="#">
                                             <div class="row gap-3 text-center">
                                                 <!-- icon -->
@@ -590,7 +618,7 @@
                                             </div>
                                             </a>
                                           </div>
-                                          <div class="list-group-item">
+                                          <div class="list-group-item border-0 bg-transparent">
                                             <a href="#">
                                             <div class="row gap-3 text-center">
                                                 <!-- icon -->
@@ -626,7 +654,7 @@
                                             </div>
                                             </a>
                                           </div>
-                                          <div class="list-group-item">
+                                          <div class="list-group-item border-0 bg-transparent">
                                             <a href="#">
                                             <div class="row gap-3 text-center">
                                                 <!-- icon -->
@@ -662,7 +690,7 @@
                                             </div>
                                             </a>
                                           </div>
-                                          <div class="list-group-item">
+                                          <div class="list-group-item border-0 bg-transparent">
                                             <a href="#">
                                             <div class="row gap-3 text-center">
                                                 <!-- icon -->
@@ -698,7 +726,7 @@
                                             </div>
                                             </a>
                                           </div>
-                                          <div class="list-group-item">
+                                          <div class="list-group-item border-0 bg-transparent">
                                             <a href="#">
                                             <div class="row gap-3 text-center">
                                                 <!-- icon -->
@@ -734,7 +762,7 @@
                                             </div>
                                             </a>
                                           </div>
-                                          <div class="list-group-item">
+                                          <div class="list-group-item border-0 bg-transparent">
                                             <a href="#">
                                             <div class="row gap-3 text-center">
                                                 <!-- icon -->
@@ -771,19 +799,24 @@
                                             </a>
                                           </div>
                                         <!-- /List Data -->
+
                                         </div>
                                       </div>
                                 </div>
+                                <!-- /List Traffic -->
+                                
                             </div>
                         </div>
+                        <!-- /traffic -->
+
                         <!-- participant -->
-                        <div class="col col-auto">
-                            <div class="card">
-                                <div class="card-header">
+                        <div class="col col-lg-7">
+                            <div class="">
+                                <div class="card-header border-success">
                                     <div class="row w-100 row-cols-1 row-cols-lg-3">
                                         <!-- title -->
                                         <div class="col my-auto">
-                                            <div class="card-title text-primary fs-5">PARTICIPANT - <span class="text-danger">All Date</span></div>
+                                            <div class="card-title text-success fs-3">PARTICIPANT - <span class="text-danger">All Date</span></div>
                                         </div>
                                         <!-- filter -->
                                         <div class="col col-lg-8 col-sm-12">
@@ -1046,6 +1079,8 @@
                                 </div>
                               </div>
                         </div>
+                        <!-- /participant -->
+
                     </div>
                 </div>
             </div>

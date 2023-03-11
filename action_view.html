@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DASHBOARD</title>
+
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/custome.css">
+</head>
+<body>
+    
+    <div class="page">
+
+        <!-- SIDEBAR START -->
+        <div class="sidebar" id="getSidebar">
+            <div class="side-top p-3">
+                <div class="close d-flex justify-content-end" id="getClose">
+                    <img src="./assets/icon/close.png" alt="">
+                </div>
+                <!-- Logo -->
+                <a href="index.html" class="logo-box">
+                    <div class="logo-brand d-flex justify-content-center">
+                        <img src="./assets/logo/logo.png" alt="" class="">
+                    </div>
+                </a>
+                <!-- End Logo -->
+            </div>
+        
+            <!-- Menu -->
+            <div class="sidebar-group">
+                <ul class="sidebar-list ">
+                    <li>
+                        <a href="index.html" class="title">
+                            <div class="mb-2 mt-2">
+                                <img src="./assets/icon/Dashboard_white.png" alt="" class="icon">
+                                <span class="name">Dashboard</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="traffic.html" class="title">
+                            <div class="mb-2 mt-2">
+                                <span class="name ms-5">Traffic</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="participant.html" class="title">
+                            <div class="mb-2 mt-2">
+                                <span class="name ms-5">Participant</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- End Menu -->
+        </div>
+        <!-- SIDEBAR END -->
+
+        <!-- HEADER START -->
+        <header class="navbar navbar-expand-md shadow-sm navbar-expand-sm navbar-light d-lg-flex d-print-none sticky-top">
+            <div class="container-fluid">
+                <div class="navbar-nav flex-row order-md-last">
+                    <div class="nav-item dropdown">
+                    <a href="index.html" class="nav-link d-flex lh-1 text-reset p-0" data-bs-toggle="dropdown" aria-label="Open user menu">
+                        <span class="avatar avatar-sm" style="background-image: url('./assets/photo/007m.jpg')"></span>
+                        <div class="d-none d-xl-block ps-2">
+                            <div style="color: var(--astr-yellow);">Admin Name</div>
+                            <div class="mt-1 small text-muted">Administrator</div>
+                        </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-caret-down text-dark" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <path d="M6 10l6 6l6 -6h-12"></path>
+                            </svg>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
+                        <a href="#" class="dropdown-item">Kembali</a>
+                    </div>
+                    </div>
+                </div>
+                <div class="navbar-nav navbar-collapse" id="navbar-menu">
+                    <!-- Notification -->
+                    <div class="nav-item col-xl-auto me-3">
+                        <button class="btn btn-rss w-100 btn-icon rounded-circle toggle-sidebar">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <line x1="4" y1="6" x2="20" y2="6"></line>
+                                <line x1="4" y1="12" x2="20" y2="12"></line>
+                                <line x1="4" y1="18" x2="20" y2="18"></line>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="nav-item  col-xl-auto">
+                        <a href="index.html">
+                            <img src="./assets/logo/logo.png" alt="" height="40">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- HEADER END -->
+
+
+        <div class="page-wrapper">
+            <div class="container-fluid">
+                <div class="page-body">
+                    <div class="row row-deck">
+                        
+                        <!-- participant -->
+                        <div class="col">
+                            <div class="row w-100 row-cols-1 gap-3">
+                                
+                                <!-- participant data traffic header -->
+                                <div class="col-12">
+                                    <div class="card shadow-sm">
+                                        <div class="card-header">
+                                            <div class="row w-100 row-cols-1 row-cols-lg-4">
+                                                <div class="col my-auto col-lg-8">
+                                                    <div class="card-title fs-1 fw-bold">PARTICIPANT</div>
+                                                </div>
+                                                <!-- filter -->
+                                                <div class="col col-lg-2">
+                                                    <select class="form-control form-select">
+                                                        <option value="1">Date - All</option>
+                                                        <option value="2">Date - Two</option>
+                                                        <option value="3">Date - Three</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col col-lg-2">
+                                                    <select class="form-control form-select">
+                                                        <option value="1">Source - All</option>
+                                                        <option value="2">Source - Two</option>
+                                                        <option value="3">Source - Three</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                </div>
+                                <!-- /participant data traffic header -->
+
+                                <!-- person data traffic info -->
+                                <div class="col-12">
+                                    <div class="card">
+                                        <div class="card-header border-bottom-0">
+                                            <div class="row w-100 row-cols-2">
+
+                                                <!-- title -->
+                                                <div class="col my-auto col-8">
+                                                    <div class="card-title fs-3 fw-bold">Data Traffic | Source - All | Date - All </div>
+                                                </div>
+                                                <!-- /title -->
+
+                                                <!-- download button -->
+                                                <div class="col-auto my-auto text-center ms-auto justify-content-end">
+                                                    <button type="button" class="bg-success border-0 rounded">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="white" d="M19.35 10.04A7.49 7.49 0 0 0 12 4C9.11 4 6.6 5.64 5.35 8.04A5.994 5.994 0 0 0 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5c0-2.64-2.05-4.78-4.65-4.96zM19 18H6c-2.21 0-4-1.79-4-4c0-2.05 1.53-3.76 3.56-3.97l1.07-.11l.5-.95A5.469 5.469 0 0 1 12 6c2.62 0 4.88 1.86 5.39 4.43l.3 1.5l1.53.11A2.98 2.98 0 0 1 22 15c0 1.65-1.35 3-3 3zm-5.55-8h-2.9v3H8l4 4l4-4h-2.55z"/></svg>
+                                                    </button>
+                                                    <div class="fs-5">Download</div>
+                                                </div>
+                                                <!-- /download button -->
+
+                                            </div>
+                                        </div>
+
+                                        <!-- Person Data -->
+                                        <div class="overflow-auto" style="max-height: 35rem;">
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    
+                                                    <!-- isi foto pantun person -->
+                                                    <div class="col-lg-3 col-sm-12">
+                                                        <div class="card shadow-sm p-2">
+                                                            <div class="img-responsive img-responsive-9x16 rounded" style="background-image: url(./assets/images/participant/fake-isi.png)"></div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- /isi foto pantun person -->
+
+                                                    <!-- person info -->
+                                                    <div class="col form-control shadow-sm">
+                                                            <label for="nama" class="mt-4">Name</label>
+                                                            <p class="form-control fs-1" id="name">Kevin Sanjaya</p>
+                                                            <label for="email">Email</label>
+                                                            <p class="form-control fs-1" id="email">kevinsj123@gmail.com</p>
+                                                            <label for="instagram">Instagram</label>
+                                                            <p class="form-control fs-1" id="instagram">kevinsjy123</p>
+                                                            <label for="submit-date">Submited</label>
+                                                            <p class="form-control fs-1" id="submit-date">11 Maret 2023</p>
+                                                            <label for="akses-via">Access</label>
+                                                            <p class="form-control fs-1" id="akses-via">QR MRT</p>
+                                                    </div>
+                                                    <!-- /person info -->
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- /Person Data -->
+                                        
+                                      </div>
+                                </div>
+                                <!-- /person data traffic info -->
+
+                            </div>
+                        </div>
+                        <!-- /participant -->
+
+                    </div>
+                </div>
+            </div>
+            <footer class="footer base-color d-print-none">
+                <div class="container-xl">
+                  <div class="row text-center align-items-center">
+                    <div class="text-light">
+                        Listerin Pantun Battle © 2023
+                    </div>
+                  </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+
+    <script src="./assets/js/astr.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/custome.js"></script>
+</body>
+</html>

@@ -124,7 +124,9 @@ hr.solid {
 /* participant container */
 
 @media screen and (max-width: 575px){
-
+    .participant-container .container-fluid{
+        width: fit-content !important;
+    }
 }
 
 /* end participant container */

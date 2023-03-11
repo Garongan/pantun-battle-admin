@@ -124,17 +124,28 @@ hr.solid {
 /* participant container */
 
 @media screen and (max-width: 575px){
-    .participant-container .container-fluid{
+    .traffic-container .text-center {
         width: fit-content !important;
-    }
-    .traffic-container {
-        max-height: 30rem !important;
+        padding: 0 !important;
+        vertical-align: middle;
     }
 }
 
 /* end participant container */
 
 /* custom class table head */
+
+.traffic-container table {
+    display: block;
+    border-collapse: unset;
+    max-height: 30rem;
+}
+.traffic-container tbody {
+    display: table;
+}
+.participant-container table {
+    border-collapse: unset;
+}
 
 .custom-table th{
     text-transform: capitalize !important;
